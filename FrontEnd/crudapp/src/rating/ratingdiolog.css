@@ -1,0 +1,254 @@
+input[type="radio"]{
+    display: none;
+  }
+  .star{
+    cursor: pointer;
+    transition: color 200ms;
+  }
+  .box2{
+      background-color: rgb(197, 197, 197);
+      height: 450px;
+      width: 550px;
+      margin-top: 180px;
+      padding: 60px;
+      border-radius: 15px;
+      box-shadow: 0 11px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);  
+    }
+    .box{
+        margin-top: 60px;
+    }
+    .txt{
+      font-size: 20px;
+      font-family:  Arial;
+    }
+  .text_area{
+      width: 350px;
+      height: 100px;
+      border-radius: 5px;
+      margin: 8px 0;
+      outline: none;
+      border: none;
+      background-color: rgb(175, 175, 175);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+    .submit{
+        margin-top: 10px;
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        border:none;
+        background-color: rgba(255, 205, 87, 0.951);
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .close{
+        margin-top: 10px;
+        width: 60px;
+        height:25px;
+        border-radius: 5px;
+        border:none;
+        background-color: rgba(229, 69, 69, 0.951);
+        font-size: 15px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .addclass{
+      color: rgb(255, 255, 255);
+      width: 200px;
+      height: 70px;
+      background-color: rgb(228, 117, 117);
+      font-size: 30px;
+      align-items: center;
+    }
+    .ratebox{
+       
+      height: 110px;
+      width: 800px;
+      margin-left: 10%;
+      margin-top: 40px;
+    }
+    .Tname{
+      margin-left: 20%;
+      margin-top: 2%;
+      font-family: Arial;
+    }
+    .star{
+      margin-left: 20%;
+      
+    }
+    .avg{
+      margin-left: 55%;
+      margin-top: -39px;
+      width: 500px;
+       
+
+    }
+    .alldetails{
+      margin-left: 40%;
+      width: 90px;
+      height: 30px;
+      font-size: 16px;
+      margin-top: -120px;
+      background-color: rgb(233, 182, 116);
+      border: none;
+      border-radius: 10px;
+      
+    }
+    .hlinehline{
+      height:2px;
+      border-width:0;
+      color:gray;
+      background-color:gray
+      
+    }
+    .deta{
+      margin-left:100px;
+      
+    }
+
+    .UnameB{
+       
+      margin-top: 50px;
+      width: 650px;
+      margin-left: 639px;
+      
+
+    }
+    .unamec{
+      font-weight: bold;
+      font-family: Arial;
+    }
+    .repbtn{
+      
+      width: 150px;
+      height: 40px;
+      border-radius: 10px;
+      border:none;
+      background-color: rgba(255, 205, 87, 0.951);
+      margin-top: -500px;
+      margin-top: 20px;
+    }
+   
+    
+    .bar{
+      width: 200px;
+      margin-top: 14px;
+
+      
+    }
+    .pBar{
+      width: 210px;
+     /* border:1px solid black; */
+     margin-left: 640px;
+      
+    }
+    .percentage{
+      width: 50px;
+      /* border:1px solid black; */
+      margin-left: 870px;
+      margin-top: -150px;
+
+    
+
+    }
+    .rBar{
+      width: 140px;
+      /* border:1px solid black; */
+      margin-left: 950px;
+      margin-top: -149px;
+
+    }
+    .avgratingu{
+      margin-left: -680px;
+      margin-top: -90px;
+    }
+    .feed{
+      width: 560px;
+      height: 550px;
+      
+      margin-left: 638px;
+      
+    }
+    .pcr{
+      margin-top: 11px;
+    }
+    .allBar{
+      margin-top: 29px;
+    }
+
+    .feedbackarea{
+      width: 100%;
+      height: 510px;
+      overflow-x: hidden;
+      margin-top: 15px;
+      background-color:#e3e3e6;
+    }
+    ::-webkit-feedbackarea{
+      width: 20px;
+      background-color: rgb(216, 216, 216);
+      
+    }
+    ::-webkit-feedbackarea-track{
+      
+      border-radius:10px;
+    }
+    ::-webkit-feedbackarea-thumb{
+    
+      border-radius:10px;
+      position:absolute;
+  
+    }
+
+    .mesFeed{
+      font-size:17px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 10px;
+      font-family: sans-serif;
+      font-weight: 3px;
+
+    }
+    .fsender{
+      font-weight: bold;
+      margin-bottom: 5px;
+      text-decoration: underline;
+
+    }
+
+    .profileArea{
+      width: 60%;
+      height: 790px;
+      overflow-x: hidden;
+      margin-top: 1%;
+      margin-left:32% ;
+      background-color:#f3f3f3;
+    }
+    ::-webkit-profileArea{
+      width: 20px;
+      background-color: rgb(216, 216, 216);
+      
+    }
+    ::-webkit-profileArea-track{
+      
+      border-radius:10px;
+    }
+    ::-webkit-profileArea-thumb{
+      
+      border-radius:10px;
+      position:absolute;
+  
+    }
+    .profileSearch{
+      margin-left: 74.5%;
+      width: 17.5%;
+      height: 50px;
+      margin-top: 40px;
+      background-color:#f3f3f3;
+      border:1px solid black;
+      padding-left: 10px;
+    }
+ 
+
+     
