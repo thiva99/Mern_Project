@@ -12,7 +12,7 @@ import StudentFeedback from './rating/studentFeedback';
 //import RateDetails from './rating/allDetails';
 //import Datas from './rating/retriveDetails';
 //import Chatbutton from './adminRequest/chatButton';
-//import App from './App';
+import App from './App';
 //import Rating from './rating';
 //import Prograse from './progressbar';
 //import Retrive from './retrive2';
@@ -37,8 +37,8 @@ import StudentFeedback from './rating/studentFeedback';
  
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App />   */}
-  <StudentFeedback/>
+    <App />  
+  {/* <StudentFeedback/> */}
   {/* <Feedbak/> */}
  
  </React.StrictMode>,
