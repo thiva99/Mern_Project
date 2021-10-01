@@ -1,15 +1,16 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
-import './ratingdiolog.css'
-import Avg from './avg';
+import "./studentFeed.css"; 
+import Feedbacks from './feedbacks';
 
-function StudentFeedback(){
-
+function Details(){
     const[details,setDetails] = useState([]);
-    const[mail,setMail] = useState("teacher2@gmail.com");
+    //const[mail,setMail] = useState(props.name);
+    const mail=('test1@gmail.com')
+    
     
     useEffect(() => {
-     axios.get(`http://localhost:8000/${mail}`)
+     axios.get(`http://localhost:8000/search/${mail}`)
        .then(res => {
            setDetails(res.data)
        })
@@ -17,27 +18,20 @@ function StudentFeedback(){
          alert('Error retrieving data!!!');
        });
    },[])
+
+
   
     return(
-        <div>
-           <div>
-           
+        <div> 
+           <div >   
             {details.map((users) => (
             <div>
              {
                (typeof(users.feedback)=='object')?
                 <div>
                    {users.feedback.map((subrow)=>
-                    <div >
-                        <p>
-                          
-                          <span>{subrow.sender}</span>
-                          <br/>
-                          <ul>
-                          <li>{subrow.feedback}</li>
-                          </ul>
-                           
-                        </p>
+                    <div>
+                      <Feedbacks name={subrow.sender} message={subrow.feedback}/>    
                     </div>
                     )
                 }
@@ -48,8 +42,8 @@ function StudentFeedback(){
             </div>
           ))}
           </div>
-         </div>
+          </div>
+         
      )
- 
-}
-export default StudentFeedback;
+ }
+export default Details;

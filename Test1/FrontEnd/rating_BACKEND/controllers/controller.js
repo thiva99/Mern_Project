@@ -19,8 +19,7 @@ const ratingSaveHandler = (req,res)=>{
     })    
 }
 
-// all data retrive part
-//{rating:{$elemMatch:{$lte:5}}}
+// AVG data part
 const details=(async(req,res)=>{
     Rating.find( )
     .exec(function(err,details){
@@ -59,26 +58,6 @@ const details=(async(req,res)=>{
    const detail=(async(req,res)=>{
        let user = req.params.email;
        Rating.find({email:user})
-       
-       
-           //    .exec(function(err,details){
-           //        var avgg=0
-           //        var tot=0
-           //        if(err){
-           //            console.log(err);
-           //        }
-           //        else{
-           //            while( tot< details.rating.length){
-                          
-           //                avgg=avgg+ (details.rating[tot])
-           //                tot++
-           //            }
-           //            let average= avgg/details.rating.length
-           //            res.json( average)
-           //        }
-             //}
-             // )
-
 
       .then(result=>res.send(result))
       .catch((err)=>{
@@ -88,16 +67,13 @@ const details=(async(req,res)=>{
    })
 
 
-
-   const search=(async(req,res)=>{
+    const search=(async(req,res)=>{
     let user = req.params.email;
-    Rating.find({email:user})
-
-   .then(result=>res.send(result))
-   .catch((err)=>{
+    Rating.find({feedback:{$elemMatch:{sender:user}}})
+    .then(result=>res.send(result))
+    .catch((err)=>{
        console.log(err);
    })
-
 })
 
 
@@ -165,9 +141,6 @@ const details=(async(req,res)=>{
     )
 })
         
-
-
-
 
 //$push $pull $addToset   insert recorrd to exesting data
 

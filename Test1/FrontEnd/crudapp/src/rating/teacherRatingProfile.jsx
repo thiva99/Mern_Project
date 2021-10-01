@@ -2,7 +2,7 @@ import React from 'react'
 import './ratingdiolog.css'
 import Rating from '@material-ui/lab/Rating';
  
-
+import Avatar from 'react-avatar';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Feedbacks from './allFeedbacks';
  
@@ -44,6 +44,13 @@ function Tdetails(props){
             </div>
             </div>
 
+
+            {/* <Avatar facebookId="100008343750912" size={150} round="20px" className="Avatra" /> */}
+
+            
+           <Avatar githubHandle="sitebase" size={150} round="20px" className="Avatra"/>
+ 
+ 
             <div className="avgratingu">
                 <center>
                   <h2>{props.avg} </h2>

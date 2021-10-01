@@ -8,14 +8,41 @@ function Rating( props){
     const[rating , setRating]=useState('')
     const[feedback , setText]=useState('')
     const[hover, setHover]=useState(null)
-    const email="teacher2@gmail.com"
+    const email="teacher3@gmail.com"
     const sender="test@gmail.com"
+    const [feedError,setError]=useState('');
+    const [rateError,setrateError]=useState('');
 
     
-    
+    const Validation = ()=>{
+         
+        if(rating==0){
+            setrateError('please Enter a rating')
+            return false;
+        }
+        else if(!feedback)
+        {
+            setError('this field canot be null')
+            return false;
+        }
+        else if(feedback.length<10)
+        {
+            setError('enter a feedback at least 10 character')
+            return false;
+        }
+        else{
+            return true
+        }    
+    }
     const ratinghandler = (event)=>{
-        event.preventDefault();
+         
         
+        const IsTrue=Validation();
+        
+        if(IsTrue==false){
+            event.preventDefault();
+        }
+        else{    
         const details={
             sender,
             feedback
@@ -25,8 +52,6 @@ function Rating( props){
             rating,
             details
         }
-        console.log(data)
-        
         axios.put('http://localhost:8000/update',data)
         .then(res=>{
         alert( "Your feedback submited" )
@@ -34,8 +59,14 @@ function Rating( props){
         })
         .catch(err=>{
         alert('Could not submit')
-    })
+        })
+         
     }
+        
+    }
+
+
+
     
     return(props.trigger) ? (
         <div>
@@ -55,10 +86,12 @@ function Rating( props){
             </label>
             )
         })}
+        <div className="Error">{rateError}</div>
          <h3 className="txt">What can i do to improve your knowledge? </h3>
         
         <textarea className="text_area" value={feedback} onChange={(event)=>setText(event.target.value)}/>
-        <br/>
+        <div className="Error">{feedError}</div>
+         
 
         <input type="submit" className="submit" onClick={event=> ratinghandler(event)} value="Submit" required/>
         <br/>

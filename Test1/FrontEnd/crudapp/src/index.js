@@ -5,7 +5,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
 //import Feedbak from './rating/feedbak';
-import StudentFeedback from './rating/studentFeedback'; 
+//import StudentFeedback from './rating/studentFeedback'; 
 //import Tdetails from './rating/teacherRatingProfile';
 //import Btn from './rating/btn';
 //import Avg from './rating/avg';
@@ -13,6 +13,8 @@ import StudentFeedback from './rating/studentFeedback';
 //import Datas from './rating/retriveDetails';
 //import Chatbutton from './adminRequest/chatButton';
 import App from './App';
+// import Feedbacks from './studentFeedback/feedbacks';
+// import Details from './studentFeedback/studentFeedbacks';
 //import Rating from './rating';
 //import Prograse from './progressbar';
 //import Retrive from './retrive2';
@@ -40,6 +42,10 @@ ReactDOM.render(
     <App />  
   {/* <StudentFeedback/> */}
   {/* <Feedbak/> */}
+  {/* <Feedbacks/> */}
+
+  {/* <Details/> */}
+
  
  </React.StrictMode>,
  document.getElementById('root')

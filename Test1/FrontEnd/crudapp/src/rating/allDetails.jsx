@@ -6,7 +6,7 @@ import Avg from './avg';
 
 function RateDetails() {
   const[details,setDetails] = useState([]);
-  // const[avg,setavg] = useState();
+  const[search,setSearch] = useState('');
   
 
   
@@ -22,30 +22,16 @@ function RateDetails() {
       });
   },[])
 
+  const filterteacher=details.filter(mail=>{
+    return mail.email.toLowerCase().includes(search.toLowerCase())
+  })
   
-  function filterData(details,searckey){
-    console.log(searckey)
-    const result =details.filter((details)=>
-    details.email.includes(searckey)
-    )
-    setDetails(details.result)
-  }
 
-  function searchhandleChange(e) {
-    const searckey= e.currentTarget.value
-    axios.get('http://localhost:8000/')
-    .then(res => {
-      if(res.data.success){
-        filterData(res.data,searckey)
-      }
-    })
-  }
-
-    return(
+  return(
       <div> 
-        <input type="text" className="profileSearch" placeholder="Search teacher's email..." onChange={searchhandleChange}/>
+        <input type="search" className="profileSearch" placeholder="Search teacher's email..." onChange={e=>setSearch(e.target.value)}/>
       <div className ="profileArea">
-        {details.map((detail,index)=>(
+        {filterteacher.map((detail,index)=>(
          <div key={index} >
          <Avg name= {detail.email} avarage={detail.avg}/>
          </div>
