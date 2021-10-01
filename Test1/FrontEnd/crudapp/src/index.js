@@ -14,7 +14,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 //import Chatbutton from './adminRequest/chatButton';
 import App from './App';
 // import Feedbacks from './studentFeedback/feedbacks';
-// import Details from './studentFeedback/studentFeedbacks';
+ import Details from './studentFeedback/studentFeedbacks';
 //import Rating from './rating';
 //import Prograse from './progressbar';
 //import Retrive from './retrive2';
@@ -39,12 +39,12 @@ import App from './App';
  
 ReactDOM.render(
   <React.StrictMode>
-    <App />  
+    {/* <App />   */}
   {/* <StudentFeedback/> */}
   {/* <Feedbak/> */}
   {/* <Feedbacks/> */}
 
-  {/* <Details/> */}
+  <Details/>
 
  
  </React.StrictMode>,

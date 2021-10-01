@@ -65,8 +65,7 @@ const details=(async(req,res)=>{
       })
 
    })
-
-
+//get specific student feedbacks
     const search=(async(req,res)=>{
     let user = req.params.email;
     Rating.find({feedback:{$elemMatch:{sender:user}}})
@@ -143,7 +142,6 @@ const details=(async(req,res)=>{
         
 
 //$push $pull $addToset   insert recorrd to exesting data
-
     const Update=(async (req,res)=>{
     //let user = req.params.email;
     //const rate = req.body.rate
@@ -158,26 +156,30 @@ const details=(async(req,res)=>{
   })
     
 
-//delete specific data
-const Delete = (async (req,res)=>{
-    const message=req.params.message
-    const name=req.params.name
+//update specific data
+const Fupdate = (async (req,res)=>{
+    const id=req.params.id
+    const iid=req.params.iid
+    const feed=req.params.feedback
 
-    Rating.findOneAndUpdate({email:name},{$pull:{chat:{message:message}}})
+    Rating.findOneAndUpdate({_id:iid},{$set:{'feedback.$[o].feedback':feed}},{arrayFilters:[{'o._id':id}]})
+
+    //Rating.findOneAndUpdate({_id:"6145b4e279d2a6a597ace676"},{$set:{'feedback.$[o].feedback':feed}},{arrayFilters:[{'o._id':id}]})
+
+
     .then(result=>res.send(result))
-
     .catch((err)=>{
      console.log(err);
+})
+})
 
-})
-})
       
 module.exports={
     ratingSaveHandler,
     details,
     detail,
     Update,
-    Delete,
+    Fupdate,
     search,
     pecentage
     

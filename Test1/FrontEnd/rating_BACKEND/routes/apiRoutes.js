@@ -1,6 +1,6 @@
 const express=require('express')
 const router=express.Router()
-const {ratingSaveHandler,details,detail,Update,Delete,pecentage,search}=require('../controllers/controller')
+const {ratingSaveHandler,details,detail,Update,Fupdate,pecentage,search}=require('../controllers/controller')
 
 router.post('/rating-save',ratingSaveHandler)
 
@@ -14,11 +14,7 @@ router.put("/update",Update)
 
  router.get('/pecentage/:email',pecentage)
 
-
-
-
-
-// router.put('/dupdate/:name/:message',Delete)
+router.put('/fupdate/:id/:iid/:feedback',Fupdate)
 
 
 module.exports = router

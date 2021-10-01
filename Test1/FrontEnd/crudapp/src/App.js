@@ -19,6 +19,7 @@ return(
   <Route path="/user/:mail" render={Details}/>
   {/* Rating function */}
   <Route exact path="/ratingprofile/:email/:avg" component={Datas}/>
+  
   <Route exact path="/rating" component={RateDetails}/>
   <Route exact path="/ratingbox" component={Btn}/>
   

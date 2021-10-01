@@ -6,8 +6,8 @@ import Feedbacks from './feedbacks';
 function Details(){
     const[details,setDetails] = useState([]);
     //const[mail,setMail] = useState(props.name);
-    const mail=('test1@gmail.com')
-    
+    const mail=('test@gmail.com')
+     
     
     useEffect(() => {
      axios.get(`http://localhost:8000/search/${mail}`)
@@ -26,12 +26,13 @@ function Details(){
            <div >   
             {details.map((users) => (
             <div>
+               
              {
                (typeof(users.feedback)=='object')?
                 <div>
                    {users.feedback.map((subrow)=>
                     <div>
-                      <Feedbacks name={subrow.sender} message={subrow.feedback}/>    
+                      <Feedbacks name={subrow.sender} message={subrow.feedback} want={mail} id={subrow._id} iid={users._id}/>    
                     </div>
                     )
                 }

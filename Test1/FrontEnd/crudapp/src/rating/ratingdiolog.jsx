@@ -17,17 +17,17 @@ function Rating( props){
     const Validation = ()=>{
          
         if(rating==0){
-            setrateError('please Enter a rating')
+            setrateError('Please give a star')
             return false;
         }
         else if(!feedback)
         {
-            setError('this field canot be null')
+            setError('This field canot be null')
             return false;
         }
         else if(feedback.length<10)
         {
-            setError('enter a feedback at least 10 character')
+            setError('Enter a feedback at least 10 character')
             return false;
         }
         else{
@@ -59,15 +59,10 @@ function Rating( props){
         })
         .catch(err=>{
         alert('Could not submit')
-        })
-         
+        })     
     }
-        
     }
 
-
-
-    
     return(props.trigger) ? (
         <div>
        <center>
@@ -104,7 +99,5 @@ function Rating( props){
         </div>
        
     ):"";
-  
 }
-
 export default Rating;
