@@ -8,4 +8,60 @@
 .show{
     visibility:hidden;
 }
- 
+.feedbackareas{
+    width: 650px;
+    height: 90px;
+    background-color: rgb(224, 224, 224);  
+    border: none;
+    font-size: 19px; 
+    resize: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+#btnn{
+    background-color: rgb(178, 206, 238); 
+    color: black; 
+    border: 2px solid #111dc0;
+    border-radius: 5px;
+}
+
+  #btnn:hover {
+    background-color: #3b4be2;
+    color: white;
+  }
+ /* display: inline-block; */
+ .heading{
+    display: inline-block;
+    width: 560px;
+ }
+
+ .myfeedbackarea{
+    width: 50%;
+    height: 750px;
+    overflow-x: hidden;
+    margin-top: 15px;
+    background-color:#ffffff;
+  }
+  ::-webkit-myfeedbackarea{
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    
+  }
+  ::-webkit-myfeedbackarea-track{
+    
+    border-radius:10px;
+  }
+  ::-webkit-myfeedbackarea-thumb{
+  
+    border-radius:10px;
+    position:absolute;
+
+  }
+  .usermail{
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }

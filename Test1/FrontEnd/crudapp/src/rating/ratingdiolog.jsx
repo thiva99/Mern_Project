@@ -52,7 +52,7 @@ function Rating( props){
             rating,
             details
         }
-        axios.put('http://localhost:8000/update',data)
+        axios.put('http://localhost:8000/rating/update',data)
         .then(res=>{
         alert( "Your feedback submited" )
             

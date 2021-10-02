@@ -11,7 +11,7 @@ function RateDetails() {
 
   
   useEffect(() => {
-    axios.get('http://localhost:8000/')
+    axios.get('http://localhost:8000/rating/')
       .then(res => {
         
         setDetails(res.data)

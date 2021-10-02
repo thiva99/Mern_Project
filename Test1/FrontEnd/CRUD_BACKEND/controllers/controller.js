@@ -52,12 +52,6 @@ const Update=(async (req,res)=>{
         console.log(err);
     })
   })
-    
-
-
- 
-    
-
 
 //delete specific data
 

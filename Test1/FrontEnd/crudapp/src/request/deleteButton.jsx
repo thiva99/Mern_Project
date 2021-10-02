@@ -7,7 +7,7 @@ function Deletebtn(props){
         const mess=(props.mes)
         const sender="user@gmail.com"
         
-        axios.put(`http://localhost:8000/dupdate/${sender}/${mess}`)
+        axios.put(`http://localhost:8070/request/${sender}/${mess}`)
         .then(res=>{
             alert('Deleted')
         })

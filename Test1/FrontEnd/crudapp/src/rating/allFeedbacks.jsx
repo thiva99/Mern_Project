@@ -9,7 +9,7 @@ import axios from 'axios';
      
      
      useEffect(() => {
-      axios.get(`http://localhost:8000/${mail}`)
+      axios.get(`http://localhost:8000/rating/${mail}`)
         .then(res => {
             setDetails(res.data)
         })

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./studentFeed.css"; 
+
 import axios from 'axios';
 
 
@@ -23,7 +24,7 @@ function Feedbacks(props){
         }
     }
     const editFeed = (event)=>{
-        axios.put(`http://localhost:8000/fupdate/${id}/${iid}/${type}`)
+        axios.put(`http://localhost:8000/rating/fupdate/${id}/${iid}/${type}`)
         .then(res=>{
         alert( "Successfully updated" )
             
@@ -39,11 +40,13 @@ function Feedbacks(props){
     }
     return(
         <div className="sfeedback">
-            <h5>{props.name}</h5>
-            {/* <h5>{props.id}</h5>
-            <h5>{props.iid}</h5> */}
-            <input type="texfeild" value={type} onChange={test}/>
-            <input type="button" value="update" className={btnShow()} onClick={event=> editFeed(event)}/>
+            <div className="heading"> 
+            <span className="usermail"> {props.name} </span>
+            </div>
+            <input type="button" value="update" className={btnShow()} onClick={event=> editFeed(event)} id="btnn"/>
+            <br/>
+            <textarea value={type} onChange={test} className="feedbackareas"/>
+            
         </div>
     );
 }

@@ -9,7 +9,7 @@ function Datas(props){
     const[details,setDetails] = useState([]);
   // const[avg,setavg] = useState();
   useEffect(() => {
-    axios.get(`http://localhost:8000/pecentage/${umail}`)
+    axios.get(`http://localhost:8000/rating/pecentage/${umail}`)
       .then(res => {
         
         setDetails(res.data)

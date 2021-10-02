@@ -3,14 +3,14 @@ import axios from 'axios';
 import "./studentFeed.css"; 
 import Feedbacks from './feedbacks';
 
-function Details(){
+function Myfeed(){
     const[details,setDetails] = useState([]);
     //const[mail,setMail] = useState(props.name);
     const mail=('test@gmail.com')
      
     
     useEffect(() => {
-     axios.get(`http://localhost:8000/search/${mail}`)
+     axios.get(`http://localhost:8000/rating/search/${mail}`)
        .then(res => {
            setDetails(res.data)
        })
@@ -22,7 +22,7 @@ function Details(){
 
   
     return(
-        <div> 
+        <div className="myfeedbackarea"> 
            <div >   
             {details.map((users) => (
             <div>
@@ -47,4 +47,4 @@ function Details(){
          
      )
  }
-export default Details;
+export default  Myfeed;

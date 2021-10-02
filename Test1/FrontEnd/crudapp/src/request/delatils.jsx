@@ -17,7 +17,7 @@ class Request extends Component {
       };
     
       getdispay = () => {
-        axios.get('http://localhost:8000/user@gmail.com')
+        axios.get('http://localhost:8070/request/user@gmail.com')
           .then((response) =>{
             const data = response.data;
             this.setState({ user:data});

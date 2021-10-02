@@ -55,6 +55,7 @@ const details=(async(req,res)=>{
        })
                        
 //find by id or name
+//not use
    const detail=(async(req,res)=>{
        let user = req.params.email;
        Rating.find({email:user})
@@ -65,6 +66,7 @@ const details=(async(req,res)=>{
       })
 
    })
+
 //get specific student feedbacks
     const search=(async(req,res)=>{
     let user = req.params.email;

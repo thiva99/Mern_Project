@@ -22,7 +22,7 @@ class ARequest extends Component{
       };
     
       getdispay = () => {
-        axios.get(`http://localhost:8000/${this.state.mail}`)
+        axios.get(`http://localhost:8070/request/${this.state.mail}`)
           .then((response) =>{
             const data = response.data;
             this.setState({ user:data});

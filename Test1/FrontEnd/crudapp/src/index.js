@@ -14,12 +14,13 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 //import Chatbutton from './adminRequest/chatButton';
 import App from './App';
 // import Feedbacks from './studentFeedback/feedbacks';
- import Details from './studentFeedback/studentFeedbacks';
+ 
 //import Rating from './rating';
 //import Prograse from './progressbar';
 //import Retrive from './retrive2';
 //import Counterfun from './retrive';
 //import Userdetails from './adminRequest/chatNav';
+//import Details from './adminRequest/value';
 //import Main from './main';
 //import ChatPage from './request/request';
 //import Request from './request/delatils.jsx';
@@ -39,12 +40,13 @@ import App from './App';
  
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App />   */}
+    <App />  
   {/* <StudentFeedback/> */}
   {/* <Feedbak/> */}
   {/* <Feedbacks/> */}
 
-  <Details/>
+  {/* <Userdetails/> */}
+   {/* <Details/> */}
 
  
  </React.StrictMode>,

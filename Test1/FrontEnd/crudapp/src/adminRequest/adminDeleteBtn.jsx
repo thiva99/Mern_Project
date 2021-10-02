@@ -3,10 +3,11 @@ import axios from "axios";
 
 function Deletebtn(props){
     function Click(){
-        const sen="user@gmail.com"
+        
+        const sen="user2@gmail.com"
         alert(sen)
         const mess=(props.mes)
-        axios.put(`http://localhost:8000/dupdate/${sen}/${mess}`)
+        axios.put(`http://localhost:8070/request/${sen}/${mess}`)
         .then(res=>{
             alert('Deleted')
         })

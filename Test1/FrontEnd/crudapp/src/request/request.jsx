@@ -17,7 +17,7 @@ const DRequest = () => {
         email,
         data
     }
-    axios.put('http://localhost:8000/update',details)
+    axios.put('http://localhost:8070/request/update',details)
     .then(res=>{
     })
     .catch(err=>{

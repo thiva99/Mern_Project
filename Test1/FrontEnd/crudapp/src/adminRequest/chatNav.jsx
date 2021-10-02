@@ -16,7 +16,7 @@ class Userdetails extends React.Component {
           };
         
           getdispay = () => {
-            axios.get('http://localhost:8000')
+            axios.get('http://localhost:8070/request/')
               .then((response) =>{
                 const data = response.data;
                 this.setState({ user:data});

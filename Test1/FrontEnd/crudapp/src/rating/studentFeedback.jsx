@@ -9,7 +9,7 @@ function StudentFeedback(){
     const[mail,setMail] = useState("teacher2@gmail.com");
     
     useEffect(() => {
-     axios.get(`http://localhost:8000/${mail}`)
+     axios.get(`http://localhost:8000/rating/${mail}`)
        .then(res => {
            setDetails(res.data)
        })
