@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
-import './ratingdiolog.css'
+import './ratingpro.css'
 import Avg from './avg';
 
 function StudentFeedback(){

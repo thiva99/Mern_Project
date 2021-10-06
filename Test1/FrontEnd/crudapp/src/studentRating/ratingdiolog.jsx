@@ -69,6 +69,7 @@ function Rating( props){
         <form className="box2">
         
         <h3 className="txt">How would you rate your teacher? </h3>
+
         {[...Array(5)].map((star, i)=>{
             const ratingValue=i+1;
 
@@ -81,6 +82,8 @@ function Rating( props){
             </label>
             )
         })}
+
+        
         <div className="Error">{rateError}</div>
          <h3 className="txt">What can i do to improve your knowledge? </h3>
         

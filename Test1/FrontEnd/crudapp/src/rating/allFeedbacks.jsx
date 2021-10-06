@@ -1,6 +1,7 @@
 
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
+import './ratingpro.css'
  
  function Feedbacks(props){
     const[details,setDetails] = useState([]);
@@ -20,18 +21,18 @@ import axios from 'axios';
    
      return(
          <div>
-            <div className="feed">
+            <div className="feedt">
             <u><h4>Student Feedback</h4></u>         
              {details.map((users) => (
-             <div className="feedbackarea">
+             <div className="feedbackareat">
               {
                 (typeof(users.feedback)=='object')?
                  <div>
                     {users.feedback.map((subrow)=>
                      <div >
-                         <p className="mesFeed">
+                         <p className="mesFeedt">
                            
-                           <span className="fsender">{subrow.sender} </span>
+                           <span className="fsendert">{subrow.sender} </span>
                            <br/>
                            <ul>
                            <li>{subrow.feedback}</li>

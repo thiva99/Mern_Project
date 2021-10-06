@@ -28,9 +28,9 @@ connection.once("open",()=>{
     console.log("This database is Connection success!");
 })
 
- const Request = require("./routes/requestRoutes");
+//  const Request = require("./routes/requestRoutes");
  
- app.use("/rating",Request);
+ app.use("/rating",require("./routes/requestRoutes"));
 
 //Display the working prot
 app.listen(port,()=>{

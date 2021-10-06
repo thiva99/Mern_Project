@@ -7,7 +7,7 @@ import {Route,BrowserRouter} from 'react-router-dom'
 import Details from './adminRequest/value';
 import Datas from './rating/retriveDetails';
 import RateDetails from './rating/allDetails';
-import Btn from './rating/btn';
+import Btn from './studentRating/btn';
 import  Myfeed from './studentFeedback/studentFeedbacks';
 // import Request from './request/delatils.jsx';
  

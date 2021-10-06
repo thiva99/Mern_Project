@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
-import './ratingdiolog.css'
+import './ratingpro.css'
 import Avg from './avg';
 
 
@@ -29,8 +29,8 @@ function RateDetails() {
 
   return(
       <div> 
-        <input type="search" className="profileSearch" placeholder="Search teacher's email..." onChange={e=>setSearch(e.target.value)}/>
-      <div className ="profileArea">
+        <input type="search" className="profileSearcht" placeholder="Search teacher's email..." onChange={e=>setSearch(e.target.value)}/>
+      <div className ="profileAreat">
         {filterteacher.map((detail,index)=>(
          <div key={index} >
          <Avg name= {detail.email} avarage={detail.avg}/>

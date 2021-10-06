@@ -13,6 +13,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 //import Datas from './rating/retriveDetails';
 //import Chatbutton from './adminRequest/chatButton';
 import App from './App';
+import BasicRating from './test/stars';
+ 
 // import Feedbacks from './studentFeedback/feedbacks';
  
 //import Rating from './rating';
@@ -40,13 +42,14 @@ import App from './App';
  
 ReactDOM.render(
   <React.StrictMode>
-    <App />  
+    {/* <App />   */}
   {/* <StudentFeedback/> */}
   {/* <Feedbak/> */}
   {/* <Feedbacks/> */}
 
   {/* <Userdetails/> */}
    {/* <Details/> */}
+   <BasicRating/>
 
  
  </React.StrictMode>,

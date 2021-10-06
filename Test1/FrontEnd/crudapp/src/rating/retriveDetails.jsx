@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import Tdetails from './teacherRatingProfile';
+import './ratingpro.css'
 
 function Datas(props){
     

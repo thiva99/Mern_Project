@@ -1,5 +1,5 @@
 const router = require("express").Router();
- const Rating = require("../modules/Request");
+ const Rating = require("../modules/rating");
 
  //data insert part
 

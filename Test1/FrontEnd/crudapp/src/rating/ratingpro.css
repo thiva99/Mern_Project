@@ -1,0 +1,234 @@
+input[type="radio"]{
+    display: none;
+  }
+  .start{
+    cursor: pointer;
+    transition: color 200ms;
+  }
+  .box2t{
+      background-color: rgb(197, 197, 197);
+      height: 480px;
+      width: 550px;
+      margin-top: 180px;
+      padding: 60px;
+      border-radius: 15px;
+      box-shadow: 0 11px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);  
+    }
+    .boxt{
+        margin-top: 60px;
+    }
+    .txtt{
+      font-size: 20px;
+      font-family:  Arial;
+      margin-top: 5px;
+    }
+  .text_areat{
+      width: 350px;
+      height: 100px;
+      border-radius: 5px;
+      margin: 8px 0;
+      outline: none;
+      border: none;
+      background-color: rgb(175, 175, 175);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+    .submitt{
+        margin-top: 10px;
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        border:none;
+        background-color: rgba(255, 205, 87, 0.951);
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .closet{
+        margin-top: 10px;
+        width: 60px;
+        height:25px;
+        border-radius: 5px;
+        border:none;
+        background-color: rgba(229, 69, 69, 0.951);
+        font-size: 15px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .addclasst{
+      color: rgb(255, 255, 255);
+      width: 200px;
+      height: 70px;
+      background-color: rgb(228, 117, 117);
+      font-size: 30px;
+      align-items: center;
+    }
+    .rateboxt{
+       
+      height: 110px;
+      width: 800px;
+      margin-left: 10%;
+      margin-top: 40px;
+    }
+    .Tnamet{
+      margin-left: 20%;
+      margin-top: 2%;
+      font-family: Arial;
+    }
+    .start{
+      margin-left: 20%;
+      
+    }
+    .avgt{
+      margin-left: 55%;
+      margin-top: -39px;
+      width: 500px;
+       
+
+    }
+    .alldetailst{
+      margin-left: 40%;
+      width: 90px;
+      height: 30px;
+      font-size: 16px;
+      margin-top: -120px;
+      background-color: rgb(233, 182, 116);
+      border: none;
+      border-radius: 10px;
+      
+    }
+    .hlinehlinet{
+      height:2px;
+      border-width:0;
+      color:gray;
+      background-color:gray
+      
+    }
+    .detat{
+      margin-left:100px;
+      
+    }
+
+    .UnameBt{
+       
+      margin-top: 50px;
+      width: 650px;
+      margin-left: 639px;
+      
+
+    }
+    .unamect{
+      font-weight: bold;
+      font-family: Arial;
+    }
+    .repbtnt{
+      
+      width: 150px;
+      height: 40px;
+      border-radius: 10px;
+      border:none;
+      background-color: rgba(255, 205, 87, 0.951);
+      margin-top: -500px;
+      margin-top: 20px;
+    }
+   
+    
+    .bart{
+      width: 200px;
+      margin-top: 14px;
+
+      
+    }
+    .pBart{
+      width: 210px;
+      
+     margin-left: 640px;
+      
+    }
+    .percentaget{
+      width: 50px;
+       
+      margin-left: 870px;
+      margin-top: -150px;
+
+    
+
+    }
+    .rBart{
+      width: 140px;
+      
+      margin-left: 950px;
+      margin-top: -149px;
+
+    }
+    .avgratingut{
+      margin-left: -680px;
+      margin-top: -80px;
+    }
+    .feedt{
+      width: 560px;
+      height: 550px;
+      margin-top: -60px;
+      margin-left: 638px;
+      
+    }
+    .pcrt{
+      margin-top: 11px;
+    }
+    .allBart{
+      margin-top: 29px;
+    }
+
+    .feedbackareat{
+      width: 100%;
+      height: 520px;
+      overflow-x: hidden;
+      margin-top: 15px;
+      background-color:#e3e3e6;
+    }
+   
+
+    .mesFeedt{
+      font-size:17px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 10px;
+      font-family: sans-serif;
+      font-weight: 3px;
+
+    }
+    .fsendert{
+      font-weight: bold;
+      margin-bottom: 5px;
+      text-decoration: underline;
+
+    }
+
+    .profileAreat{
+      width: 60%;
+      height: 790px;
+      overflow-x: hidden;
+      margin-top: 1%;
+      margin-left:32% ;
+      background-color:#f3f3f3;
+      border-radius:10px;
+    }
+    
+    .profileSearcht{
+      margin-left: 74.5%;
+      width: 17.5%;
+      height: 50px;
+      margin-top: 40px;
+      background-color:#f3f3f3;
+      padding-left: 15px;
+      border:none;
+      border-radius: 10px;
+    }
+    .Avatrat{
+      margin-top: -100px;
+      margin-left: 188px;
+    }
+    
+ 
+
+     

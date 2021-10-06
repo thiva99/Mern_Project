@@ -141,13 +141,12 @@ input[type="radio"]{
     }
     .pBar{
       width: 210px;
-     /* border:1px solid black; */
+      
      margin-left: 640px;
       
     }
     .percentage{
-      width: 50px;
-      /* border:1px solid black; */
+      width: 50px; 
       margin-left: 870px;
       margin-top: -150px;
 
@@ -156,7 +155,7 @@ input[type="radio"]{
     }
     .rBar{
       width: 140px;
-      /* border:1px solid black; */
+       
       margin-left: 950px;
       margin-top: -149px;
 
@@ -186,21 +185,7 @@ input[type="radio"]{
       margin-top: 15px;
       background-color:#e3e3e6;
     }
-    ::-webkit-feedbackarea{
-      width: 20px;
-      background-color: rgb(216, 216, 216);
-      
-    }
-    ::-webkit-feedbackarea-track{
-      
-      border-radius:10px;
-    }
-    ::-webkit-feedbackarea-thumb{
-    
-      border-radius:10px;
-      position:absolute;
-  
-    }
+ 
 
     .mesFeed{
       font-size:17px;
@@ -227,21 +212,7 @@ input[type="radio"]{
       background-color:#f3f3f3;
       border-radius:10px;
     }
-    ::-webkit-profileArea{
-      width: 20px;
-      background-color: rgb(216, 216, 216);
-      
-    }
-    ::-webkit-profileArea-track{
-      
-      border-radius:10px;
-    }
-    ::-webkit-profileArea-thumb{
-      
-      border-radius:10px;
-      position:absolute;
-  
-    }
+   
     .profileSearch{
       margin-left: 74.5%;
       width: 17.5%;
